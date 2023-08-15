@@ -35,12 +35,17 @@ Installing Django
 ```
 
 # Settings
-### Static Files in the directory root
-
+### Static Files
+Base URL prefix for static files served by your application
 ```cmd
->> import os
 >> STATIC_URL = 'static/'
+```
+List of directories where django will look for static files
+```cmd
 >> STATICFILES_DIRS = [os.path.join(BASE_DIR, 'templates/static/')]
+```
+Absolute file system path where static files will be gathered for use during the deployment or production process
+```cmd
 >> STATIC_ROOT = BASE_DIR / 'static'
 ```
 
