@@ -44,7 +44,7 @@ Installing Django
 >> STATIC_ROOT = BASE_DIR / 'static'
 ```
 
-### Media upload directory 
+### Media
 MEDIA_ROOT specified the directory it will be stored the media file uploads via your Django application
 ```cmd
 >> MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
