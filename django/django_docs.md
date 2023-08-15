@@ -35,7 +35,7 @@ Installing Django
 ```
 
 # Settings
-Static Files in the directory root
+### Static Files in the directory root
 
 ```cmd
 >> import os
@@ -43,4 +43,16 @@ Static Files in the directory root
 >> STATICFILES_DIRS = [os.path.join(BASE_DIR, 'templates/static/')]
 >> STATIC_ROOT = BASE_DIR / 'static'
 ```
+
+### Media upload directory 
+MEDIA_ROOT specified the directory it will be stored the media file uploads via your Django application
+```cmd
+>> MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+```
+MEDIA_URL specifies the URL prefix that will be used to access media files via the web browser
+```cmd
+>> MEDIA_URL = 'media/'
+```
+
+
 
