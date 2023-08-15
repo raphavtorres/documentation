@@ -75,3 +75,4 @@ Create a new branch based on a specific one
 ```bash
 >> git checkout -b <newBranchName> <basedBranchName>
 ```
+"-b" tells Git that you want to create a new branch and immediately switch to that new branch
