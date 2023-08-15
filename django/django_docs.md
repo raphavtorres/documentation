@@ -5,7 +5,7 @@
 ```cmd
 >> pip install django
 >> django-admin startproject <project_name>
->> django-admin startapp <app_name>
+>> py manage.py startapp <app_name>
 ```
 
 ## Running server 🏎
@@ -24,3 +24,5 @@
 ```cmd
 >> py manage.py createsuperuser
 ```
+
+# Configs
