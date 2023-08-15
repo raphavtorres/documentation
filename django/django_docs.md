@@ -2,9 +2,18 @@
 
 
 ## Setup environment 🏗
+
+Creating virtual environment
+```cmd
+>> py -m venv <env_name>
+>> <env_name>\Scripts\activate
+>> pip freeze > requirements.txt
+```
+
+Installing Django
 ```cmd
 >> pip install django
->> django-admin startproject <project_name>
+>> django-admin startproject <project_name> .
 >> py manage.py startapp <app_name>
 ```
 
@@ -26,3 +35,4 @@
 ```
 
 # Configs
+
