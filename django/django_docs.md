@@ -34,7 +34,7 @@ Installing Django
 >> py manage.py createsuperuser
 ```
 
-# Settings
+# Settings ⚙
 After creating your app you need to add it to `INSTALLED_APPS`
 
 ```python
