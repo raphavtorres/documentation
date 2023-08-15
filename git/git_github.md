@@ -57,3 +57,21 @@ In case you have made changes in other machine, you can use:
 ```bash
 >> git pull origin <branchName>
 ```
+
+
+## Working with Branches
+
+Check current branch
+```bash
+>> git checkout
+```
+
+Create a new branch based on main
+```bash
+>> git checkout -b <newBranchName>
+```
+
+Create a new branch based on a specific one
+```bash
+>> git checkout -b <newBranchName> <basedBranchName>
+```
