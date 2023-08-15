@@ -23,5 +23,3 @@ Only applications have "views.py"
 
 ## Create adm access
 `py manage.py createsuperuser`
-username: geek
-pass: geekpass
