@@ -55,5 +55,5 @@ Create an empty repository in GitHub
 
 In case you have made changes in other machine, you can use:
 ```bash
->> git pull
+>> git pull origin <branchName>
 ```
