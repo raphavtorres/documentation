@@ -35,6 +35,30 @@ Installing Django
 ```
 
 # Settings
+After creating your app you need to add it to `INSTALLED_APPS`
+
+```python
+ + ALLOWED_HOSTS = ['*']
+```
+
+```python
+TEMPLATES = [
+  {
+    # ...
+    + 'DIRS': ['templates'],
+    # ...
+  }
+]
+```
+```python
+LANGUAGE_CODE = 'en-us'
+# LANGUAGE_CODE = 'pt-br'
+```
+
+```python
+TIME_ZONE = 'America/Sao_Paulo'
+```
+
 ### Static Files
 Base URL prefix for static files served by your application
 ```cmd
