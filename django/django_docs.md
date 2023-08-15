@@ -34,5 +34,13 @@ Installing Django
 >> py manage.py createsuperuser
 ```
 
-# Configs
+# Settings
+Static Files in the directory root
+
+```cmd
+>> import os
+>> STATIC_URL = 'static/'
+>> STATICFILES_DIRS = [os.path.join(BASE_DIR, 'templates/static/')]
+>> STATIC_ROOT = BASE_DIR / 'static'
+```
 
