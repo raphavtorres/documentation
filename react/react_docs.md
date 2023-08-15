@@ -48,3 +48,5 @@ or
 ```bash
 >> yarn add react-router-dom
 ```
+Learn how to use routes
+[React Router V6.4+ Tutorial](https://www.youtube.com/watch?v=z0vaVoxMoSA&ab_channel=PedroTech).
