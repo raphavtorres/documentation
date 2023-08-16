@@ -66,7 +66,7 @@ Base URL prefix for static files served by your application
 ```
 List of directories where django will look for static files
 ```cmd
->> STATICFILES_DIRS = [os.path.join(BASE_DIR, 'templates/static/')]
+>> STATICFILES_DIRS = [os.path.join(BASE_DIR, 'global/static/')]
 ```
 ![Exemple](https://github.com/raphavtorres/documentation/blob/main/global/images/global-static.png)
 
