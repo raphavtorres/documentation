@@ -76,11 +76,11 @@ Absolute file system path where static files will be gathered for use during the
 ```
 
 ### Media
-MEDIA_ROOT specified the directory it will be stored the media file uploads via your Django application
+`MEDIA_ROOT` specified the directory it will be stored the media file uploads via your Django application
 ```cmd
 >> MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 ```
-MEDIA_URL specifies the URL prefix that will be used to access media files via the web browser
+`MEDIA_URL` specifies the URL prefix that will be used to access media files via the web browser
 ```cmd
 >> MEDIA_URL = 'media/'
 ```
@@ -95,5 +95,5 @@ This command is used to create new migration files based on the changes you have
 ```cmd
 >> py manage.py migrate
 ```
-This command reads the migration files and executes the necessary SQL statements to bring your database schema up to date with the changes you've defined in your models.
+This command reads the migration files and executes the necessary SQL statements to bring your database schema up to date with the changes you've defined in your `models.`
 
