@@ -85,5 +85,15 @@ MEDIA_URL specifies the URL prefix that will be used to access media files via t
 >> MEDIA_URL = 'media/'
 ```
 
+# Models 🎲
+After create or modify the models archive run: 
+```cmd
+>> py manage.py makemigrations
+```
+This command is used to create new migration files based on the changes you have made to your Django models
 
+```cmd
+>> py manage.py migrate
+```
+This command reads the migration files and executes the necessary SQL statements to bring your database schema up to date with the changes you've defined in your models.
 
