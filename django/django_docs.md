@@ -72,7 +72,7 @@ List of directories where django will look for static files
 
 Absolute file system path where static files will be gathered for use during the deployment or production process
 ```cmd
->> STATIC_ROOT = BASE_DIR / 'static'
+>> STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 ```
 
 ### Media
