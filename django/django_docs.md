@@ -68,7 +68,7 @@ List of directories where django will look for static files
 ```cmd
 >> STATICFILES_DIRS = [os.path.join(BASE_DIR, 'templates/static/')]
 ```
-![Exemple](https://github.com/raphavtorres/documentation/blob/main/global/images/templates-static.png)
+![Exemple](https://github.com/raphavtorres/documentation/blob/main/global/images/global-static.png)
 
 Absolute file system path where static files will be gathered for use during the deployment or production process
 ```cmd
