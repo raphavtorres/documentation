@@ -61,28 +61,28 @@ TIME_ZONE = 'America/Sao_Paulo'
 
 ### Static Files
 Base URL prefix for static files served by your application
-```cmd
->> STATIC_URL = 'static/'
+```python
+STATIC_URL = 'static/'
 ```
 List of directories where django will look for static files
-```cmd
->> STATICFILES_DIRS = [os.path.join(BASE_DIR, 'global/static/')]
+```python
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'global/static/')]
 ```
 ![Exemple](https://github.com/raphavtorres/documentation/blob/main/global/images/global-static.png)
 
 Absolute file system path where static files will be gathered for use during the deployment or production process
-```cmd
->> STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+```python
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 ```
 
 ### Media
 `MEDIA_ROOT` specified the directory it will be stored the media file uploads via your Django application
-```cmd
->> MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+```python
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 ```
 `MEDIA_URL` specifies the URL prefix that will be used to access media files via the web browser
-```cmd
->> MEDIA_URL = 'media/'
+```python
+MEDIA_URL = 'media/'
 ```
 
 # Models 🎲
