@@ -25,13 +25,13 @@
 ```
 PS: Let it always running
 
-2. Import TailwindProvider and tailwind.json in the root of your app
+2. Import TailwindProvider and tailwind.json in the root of your App.jsx
 ```javascript
 import {TailwindProvider} from 'tailwind-rn';
 import utilities from './tailwind.json';
 ```
 
-3. Wrap the root of your app into TailwindProvider:
+3. Wrap the root of your App.jsx into TailwindProvider:
 ```javascript
 <TailwindProvider utilities={utilities}>
  <MyComponent/>
