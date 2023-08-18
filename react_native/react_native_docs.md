@@ -43,9 +43,9 @@ import utilities from './tailwind.json';
 import {useTailwind} from 'tailwind-rn';
 
 const MyComponent = () => {
- const tailwind = useTailwind();
+ const tw = useTailwind();
 
- return <Text style={tailwind('text-blue-600')}>Hello world</Text>;
+ return <Text style={tw('text-blue-600')}>Hello world</Text>;
 };
 ```
 
