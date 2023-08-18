@@ -1,74 +1,61 @@
-# React Native
-
-### Currently the tailwind is not working properly
-
 # Starting React Native project
 
-### Prepare dev environment
-
-```bash
->> npm install --global expo-cli
+## Create a new project
+```cmd
+>> yarn create expo-app <project_name>
+>> cd <project_name>
 ```
 
-
-### Create a new project
-
-```bash
->> npx create-expo-app <app_name>
+## Run project
+```cmd
+>> yarn expo start
 ```
 
+## Seting up Tailwind
 
-### Run project
-
-```bash
->> npx expo start
+```cmd
+>> yarn add tailwind-rn
+>> npx setup-tailwind-rn
 ```
 
-
-### Handling installations
-
-```bash
->> npx expo instal
+### Follow instalation steps:
+1. Run tailwind-rn in development mode:
+```cmd
+>> yarn dev:tailwind
 ```
+PS: Let it always running
 
-### Seting up Tailwind
-
-```bash
->> yarn add nativewind
->> yarn add --dev tailwindcss
-```
-
-### Create a tailwind.config.js file
-
-```bash
->> npx tailwindcss init
-```
-
-### Paste the next comands in the tailwind.config.js file
+2. Import TailwindProvider and tailwind.json in the root of your app
 ```javascript
-/** @type {import('tailwindcss').Config} \*/
-module.exports = {
-    content: ["./App.{js,jsx,ts,tsx}", "./src/**/\*.{js,jsx,ts,tsx}"],
-    theme: {
-        extend: {},
-    },
-    plugins: [],
-}
+import {TailwindProvider} from 'tailwind-rn';
+import utilities from './tailwind.json';
 ```
 
-### Add the Babel plugin, modify your babel.config.js
+3. Wrap the root of your app into TailwindProvider:
 ```javascript
-// babel.config.js
-module.exports = function (api) {
-    api.cache(true);
+<TailwindProvider utilities={utilities}>
+ <MyComponent/>
+</TailwindProvider>
+```
 
-    return {
-        presets: ['babel-preset-expo'],
-        plugins: ["nativewind/babel"],
-    };
+4. Use Tailwind
+```javascript
+import {useTailwind} from 'tailwind-rn';
+
+const MyComponent = () => {
+ const tailwind = useTailwind();
+
+ return <Text style={tailwind('text-blue-600')}>Hello world</Text>;
 };
 ```
 
+In `input.css` add:
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
 
-### After the project is done
+
+## After the project is done
 Everytime you clone the repository, run `yarn` to install the dependencies
