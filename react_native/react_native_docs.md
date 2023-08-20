@@ -11,51 +11,15 @@
 >> yarn expo start
 ```
 
-## Seting up Tailwind
+# Libraries
+## react-native-svg-transformer
+https://github.com/kristerkari/react-native-svg-transformer
 
-```cmd
->> yarn add tailwind-rn
->> npx setup-tailwind-rn
-```
+## Expo LinearGradient
+https://docs.expo.dev/versions/latest/sdk/linear-gradient/
 
-### Follow instalation steps:
-1. Run tailwind-rn in development mode:
-```cmd
->> yarn dev:tailwind
-```
-PS: Let it always running
-
-2. Import TailwindProvider and tailwind.json in the root of your App.jsx
-```javascript
-import {TailwindProvider} from 'tailwind-rn';
-import utilities from './tailwind.json';
-```
-
-3. Wrap the root of your App.jsx into TailwindProvider:
-```javascript
-<TailwindProvider utilities={utilities}>
- <MyComponent/>
-</TailwindProvider>
-```
-
-4. Use Tailwind
-```javascript
-import {useTailwind} from 'tailwind-rn';
-
-const MyComponent = () => {
- const tw = useTailwind();
-
- return <Text style={tw('text-blue-600')}>Hello world</Text>;
-};
-```
-
-In `input.css` add:
-```css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-```
-
+## @phosphor-icons/react
+https://github.com/phosphor-icons/react
 
 ## After the project is done
 Everytime you clone the repository, run `yarn` to install the dependencies
