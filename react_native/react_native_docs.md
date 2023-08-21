@@ -11,15 +11,18 @@
 >> yarn expo start
 ```
 
-# Libraries
+# Libraries 📚
 ## react-native-svg-transformer
 https://github.com/kristerkari/react-native-svg-transformer
+<br><br>
 
-## Expo LinearGradient
+## Expo LinearGradient 🎨
 https://docs.expo.dev/versions/latest/sdk/linear-gradient/
+<br><br>
 
-## @phosphor-icons/react
-https://github.com/phosphor-icons/react
+## Using icons 🤔
+[https://github.com/phosphor-icons/react](https://docs.expo.dev/guides/icons/)
+<br><br>
 
 ## After the project is done
 Everytime you clone the repository, run `yarn` to install the dependencies
