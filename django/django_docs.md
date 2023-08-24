@@ -104,7 +104,7 @@ This command reads the migration files and executes the necessary SQL statements
 ![Exemple](https://github.com/raphavtorres/documentation/blob/main/global/images/test_folders.png)
 <br>
 
-Create a `.coveragerc.txt` in the root of your project
+Create a `.coveragerc` in the root of your project
 And paste this code, to omit files that shouldn't be tested
 ```text
 [run]
@@ -121,3 +121,22 @@ omit =
   */migrations/*
   */tests/*
 ```
+
+Run tests and access report
+```cmd
+>> coverage run manage.py test
+>> coverage report
+```
+
+Go to your `.gitignore` and paste `htmlcov/*`
+```cmd
+>> coverage html
+```
+Creates a report in html
+
+You can run the report on the web
+```cmd
+>> cd htmlcov
+>> python -m http.server
+```
+
