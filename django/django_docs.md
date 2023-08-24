@@ -101,3 +101,4 @@ This command reads the migration files and executes the necessary SQL statements
 ```cmd
 >> pip install model_mommy coverage
 ```
+![Exemple](https://github.com/raphavtorres/documentation/blob/main/global/images/test_folders.png)
