@@ -102,3 +102,22 @@ This command reads the migration files and executes the necessary SQL statements
 >> pip install model_mommy coverage
 ```
 ![Exemple](https://github.com/raphavtorres/documentation/blob/main/global/images/test_folders.png)
+<br>
+
+Create a `.coveragerc.txt` in the root of your project
+And paste this code, to omit files that shouldn't be tested
+```text
+[run]
+source = .
+
+omit = 
+  */__init__.py
+  */settings.py
+  */manage.py
+  */wsgi.py
+  */apps.py
+  */urls.py
+  */admin.py
+  */migrations/*
+  */tests/*
+```
