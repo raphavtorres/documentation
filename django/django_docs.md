@@ -17,7 +17,7 @@ Installing Django
 >> py manage.py startapp <app_name>
 ```
 
-## Running server 🏎
+## Running server 🏃‍♀️
 ```cmd
 >> py manage.py runserver
 ```
@@ -97,3 +97,7 @@ This command is used to create new migration files based on the changes you have
 ```
 This command reads the migration files and executes the necessary SQL statements to bring your database schema up to date with the changes you've defined in your `models.`
 
+# Tests 🏎 
+```cmd
+>> pip install model_mommy coverage
+```
