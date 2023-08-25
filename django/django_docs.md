@@ -38,7 +38,7 @@ Installing Django
 After creating your app you need to add it to `INSTALLED_APPS`
 
 ```python
- + ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*']
 ```
 
 ```python
