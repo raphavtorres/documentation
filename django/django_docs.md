@@ -22,13 +22,6 @@ Installing Django
 >> py manage.py runserver
 ```
 
-
-## Handling migrations 🧩
-```cmd
->> py manage.py makemigrations
->> py manage.py migrate
-```
-
 ## Create adm access 👑
 ```cmd
 >> py manage.py createsuperuser
@@ -45,7 +38,7 @@ ALLOWED_HOSTS = ['*']
 TEMPLATES = [
   {
     # ...
-    + 'DIRS': ['templates'],
+    'DIRS': ['templates'],
     # ...
   }
 ]
