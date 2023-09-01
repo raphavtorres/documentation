@@ -19,7 +19,7 @@ The “.” creates the folder inside the one you're currently on
 (I recommend using `yarn` instead of `npm`)
 <br><br>
 
-##Create react app (Vite):
+## Create react app (Vite):
 
 I personaly prefer Vite
 
