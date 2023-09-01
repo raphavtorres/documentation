@@ -12,15 +12,18 @@ The “.” creates the folder inside the one you're currently on
 >> npx create-react-app . --template typescript
 ```
 
-Create react app (Vite):
+### Run code 🏃‍♂️:
+```bash
+>> yarn start
+```
+(I recommend using `yarn` instead of `npm`)
+<br><br>
+
+##Create react app (Vite):
 
 I personaly prefer Vite
 
 Really recommend to see the documentation (pretty good one)
-
-But if you’re wanting to get more advanced, jump right in to Next.JS
-
-Another thing, I recommend `yarn` instead of `npm`
 
 ```bash
 >> npm create vite@latest
@@ -30,15 +33,11 @@ or
 >> yarn create vite
 ```
 
-## Run code 🏃‍♂️:
+### Run code 🏃‍♂️:
+```bash
+>> yarn dev
+```
 
-```bash
->> npm start
-```
-or
-```bash
->> yarn start
-```
 
 ## Routes 🗺:
 ```bash
