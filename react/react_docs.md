@@ -26,11 +26,7 @@ I personaly prefer Vite
 Really recommend to see the documentation (pretty good one)
 
 ```bash
->> npm create vite@latest
-```
-or
-```bash
->> yarn create vite
+>> yarn create vite <app_name> --template react
 ```
 
 ### Run code 🏃‍♂️:
