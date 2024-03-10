@@ -1,78 +1,115 @@
-# Configs
-
+# Git Config
 
 ```bash
 >> git config --global user.name "<your_username>"
 >> git config --global user.email "<your_email>"
 ```
 
-## Clone repo
-What I like to do
 
-File Explorer → Desktop → right "cmd" in the file path
-
-But you can choose where to clone your repo
-
-Copy repository link (github)
-  
+GIT CODES
+Basic commit log:
 ```bash
->> git clone <link>
->> cd <folder name
->> code .
->> git status
+>> git log
 ```
 
-## Saving changes
-Adding all files, could be a especific file instead of "."
+Summed up log with commit hash and message
 ```bash
->> git add .
+>> git log --oneline
 ```
 
-Commiting
+Detailed log with diff and changes
 ```bash
->> git commit -m "<description>"
->> git push origin <branch_name>
+>> git log --p
 ```
 
-* "commit" saving in your machine
-* "push" is send to cloud 
-* "origin" indicates that is remote, push you
-
-
-## Creating repo throught PC
-Create an empty repository in GitHub
-
+Branch Timeline
 ```bash
->> git init
->> git add README.md
->> git commit -m "first commit"
->> git branch -M main
->> git remote add origin <link>
->> git push -u origin main 
-```
-"-u" indicates that "main" will always be the main branch
-
-
-In case you have made changes in other machine, you can use:
-```bash
->> git pull origin <branchName>
+>> git log --graph
 ```
 
-
-## Working with Branches
-
-Check current branch
+Same thing as "-p" but for a specific commit
+Without arguments, it uses HEAD as default
 ```bash
->> git checkout
+>> git show <hash_commit>
 ```
 
-Create a new branch based on main
+### HEAD == Last commit
+
+Shows the difference between what we have to commit (before "add") and the last commit
 ```bash
->> git checkout -b <newBranchName>
+>> git diff
 ```
 
-Create a new branch based on a specific one
+Undo commit changes (creates a new commit)
 ```bash
->> git checkout -b <newBranchName> <basedBranchName>
+>> git revert <hash_commit>
 ```
-"-b" tells Git that you want to create a new branch and immediately switch to that new branch
+
+Delete commit from LOCAL repository
+```bash
+>> git reset --hard <hash_commit_we_wanna_return>
+```
+
+Update a commit
+```bash
+>> git commit --amend -m "..."
+```
+
+### Para criar gitignore para várias linguagens: gitignore.io
+
+
+## Working with branches
+
+Show all my branches
+```bash
+>> git branch
+```
+
+Rename
+```bash
+>> git branch -m <nome_atual_branch> <nome_novo_branch>
+```
+
+Delete (locally)
+```bash
+>> git branch -d <nome_branch>
+```
+
+Remove from remote repository
+```bash
+>> git push origin :<nome_branch>
+```
+
+Create new branch
+```bash
+>> git branch <nome_branch>
+```
+
+Change branch (old command)
+```bash
+>> git checkout <nome_branch>
+```
+
+Change branch
+```bash
+>> git switch <nome_branch>
+```
+
+Create new branch and switch to it at the same time
+```bash
+>> git switch -c <nome_branch>
+```
+
+To realize the push correctly
+```bash
+>> git push origin <nome_branch>
+```
+
+### Merge with provisory branch
+On the main branch:
+```bash
+>> git merge <nome_branch>
+```
+In case the main branch has no changes, a Fast Foward will be made
+FF: main moves, without commit, to the same point as the other branch
+If there's changes, git notices the independence between them, and automatically creates a commit, uniting the two
