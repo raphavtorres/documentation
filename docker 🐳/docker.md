@@ -31,10 +31,13 @@ docker image rm <imageId>
 ```
         
 ### Docker run (create and run container)
--it -> rodar no modo interativo
--d -> rodar em background
--p -> especificar a porta que está rodando
---name -> especificar o nome do container
+-it: rodar no modo interativo
+
+-d: rodar em background
+
+-p: especificar a porta que está rodando
+
+--name: especificar o nome do container
 
 Example:
 ```pws
