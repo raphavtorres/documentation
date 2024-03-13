@@ -17,17 +17,17 @@ docker images
 
 Compress image
 ```psw
-docker image save -o <archiveName>.tar <imagename>:<version> -> comprimir sua imagem
+docker image save -o <archiveName>.tar <imagename>:<version>
 ```
 
 Unzip image
 ```pws
-docker image load -i <archiveName>.tar -> descompactar a imagem
+docker image load -i <archiveName>.tar
 ```
 
 Remove image
 ```pws
-docker image rm <imageId> -> remover uma imagem
+docker image rm <imageId>
 ```
         
 ### Docker run (create and run container)
