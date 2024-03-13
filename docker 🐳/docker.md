@@ -17,17 +17,17 @@ docker images
 
 Compress image
 ```psw
-docker image save -o <archiveName>.tar <imagename>:<version>
+docker image save -o <archive_name>.tar <imagen_ame>:<version>
 ```
 
 Unzip image
 ```pws
-docker image load -i <archiveName>.tar
+docker image load -i <archive_name>.tar
 ```
 
 Remove image
 ```pws
-docker image rm <imageId>
+docker image rm <image_id>
 ```
         
 ### Docker run (create and run container)
@@ -41,18 +41,18 @@ docker image rm <imageId>
 
 Example:
 ```pws
-docker run -d --name <containerName> -p <hostPort><dockerPort> <imageName>:<version>
+docker run -d --name <container_name> -p <host_port>:<docker_port> <image_name>:<version>
 ```
 
 ### Docker exec (execute command in container)
 ```pws
-docker exec <contaninerName> <command>
+docker exec <contaniner_name> <command>
 ```
         
 ### Docker stop/start (stop and start container)
 ```pws
-docker stop <containerName>
-docker run <containerName> 
+docker stop <container_name>
+docker run <container_name> 
 ```
 ### Remove Container
 force to stop and remove
@@ -60,14 +60,14 @@ force to stop and remove
 -f
 ```
 ```pws
-docker rm <containerName>
+docker rm <container_name>
 ```
 
 
 ### Docker volume
 ```pws
-docker volume create <volumeName>
-docker run -it -v <volumeName>:/<directoryName> <image>
+docker volume create <volume_name>
+docker run -it -v <volume_name>:/<directory_name> <image>
 ```
 
 ### Docker copy files
@@ -86,21 +86,21 @@ Run specific network
 --network <network>
 ```
          
-# DOCKERFILE - 
-FROM -> image (Linux, Ubuntu), platform (python, nodejs)
+# DOCKERFILE
+FROM: image (Linux, Ubuntu), platform (python, nodejs)
 
-WORKDIR -> work directory (executes the commands inside this directory)
+WORKDIR: work directory (executes the commands inside this directory)
 
-COPY -> copy your local directory and add in image
+COPY: copy your local directory and add in image
 
-ADD -> Copies an internet file or adds and unzips a local file and adds an image
+ADD: Copies an internet file or adds and unzips a local file and adds an image
 
-RUN -> Commands to install the dependencies in the image construction
+RUN: Commands to install the dependencies in the image construction
 
-ENV -> environment configurations
+ENV: environment configurations
 
-EXPOSE -> expose your application to a determined port
+EXPOSE: expose your application to a determined port
 
-USER -> user who will execute the application
+USER: user who will execute the application
 
-CMD -> commands to run the application (runs afeter the image construction)
+CMD: commands to run the application (runs afeter the image construction)
