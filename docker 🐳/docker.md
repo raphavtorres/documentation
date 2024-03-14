@@ -1,6 +1,7 @@
 # Docker Config
 
 ## Docker commands
+
     
 ### Docker build 
 
@@ -8,6 +9,7 @@ Create image
 ```pws
 docker build -t <name>:<tag> .
 ```
+
 
 ### Docker image (Work with your images)
 List images
@@ -29,20 +31,24 @@ Remove image
 ```pws
 docker image rm <image_id>
 ```
+
         
 ### Docker run (create and run container)
--it: rodar no modo interativo
+-it: run in interactive mode
 
--d: rodar em background
+-d: run in background
 
--p: especificar a porta que está rodando
+-p: specify the port it is running on
 
---name: especificar o nome do container
+--name: specify the container name
+
+-e: specify environment variables
 
 Example:
 ```pws
 docker run -d --name <container_name> -p <host_port>:<docker_port> <image_name>:<version>
 ```
+
 
 ### Docker exec (execute command in container)
 ```pws
@@ -75,6 +81,7 @@ docker run -it -v <volume_name>:/<directory_name> <image>
 docker cp <origin> <destiny>
 ```
 
+
 ### Docker network
 ```pws        
 docker network ls
@@ -85,6 +92,7 @@ Run specific network
 ```pws
 --network <network>
 ```
+
 
 ### My shortcuts
 ```pws
@@ -98,6 +106,7 @@ alias docker-vlrm='docker volume rm $(docker volume ls -q)'
 
 alias docker-ntrm='docker network rm $(docker network ls -q)'
 ```
+
          
 # DOCKERFILE
 FROM: image (Linux, Ubuntu), platform (python, nodejs)
