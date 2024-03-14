@@ -85,6 +85,19 @@ Run specific network
 ```pws
 --network <network>
 ```
+
+### My shortcuts
+```pws
+alias docker-stop='docker stop $(docker ps -a -q)'
+
+alias docker-psrm='docker rm $(docker ps -a -q)'
+
+alias docker-imgrm='docker rmi $(docker images -q)'
+
+alias docker-vlrm='docker volume rm $(docker volume ls -q)'
+
+alias docker-ntrm='docker network rm $(docker network ls -q)'
+```
          
 # DOCKERFILE
 FROM: image (Linux, Ubuntu), platform (python, nodejs)
