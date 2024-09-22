@@ -2,7 +2,11 @@
 
 ## Docker commands
 
-    
+## Remove everything
+```pws
+docker system prune --all --force --volumes
+```
+
 ### Docker build 
 
 Create image
