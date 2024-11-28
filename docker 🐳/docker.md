@@ -5,6 +5,8 @@
 ## Remove everything
 ```pws
 docker system prune --all --force --volumes
+or
+docker system prune -a --volumes -f
 ```
 
 ### Docker build 
